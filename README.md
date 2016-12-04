@@ -1,7 +1,9 @@
 # Android Studio MVP Template
 
 -----------------------------------
-I prefer to have everything structured by feature so I modified the original template a bit to suit my needs.
+This is really hacky edit on original template, there is one issue I am a bit lazy to go around with, when creating new activity, in android manifest its relative path to class is written as 'path.Feature' instead of 'path.FeatureActivity', probably an easy fix, but as being new to Android Studio templates, I couldn't find where to edit this.
+
+I prefer to have everything structured by feature/user cases, so I modified the original template a bit to suit my needs.
 It will be structured like this: 
 
 ```
