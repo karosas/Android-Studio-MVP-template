@@ -1,5 +1,49 @@
 # Android Studio MVP Template
 
+-----------------------------------
+I prefer to have everything structured by feature so I modified the original template a bit to suit my needs.
+It will be structured like this: 
+
+```
+com.company.app
+    +-- base
+    |   +-- injection
+    |       - ActivityScope
+    |       - AppComponent
+    |       - AppModule
+    |       - FragmentScope
+    |   +-- interactor
+    |       - BaseInteractor
+    |   +-- presenter
+    |       +-- loader
+    |           - PresenterFactory
+    |           - PresenterLoader
+    |       - BasePresenter
+    |       - BasePresenterImpl
+    |   +-- view
+    |       - BaseActivity
+    |       - BaseFragment
+    +-- YourUserCase
+    |   +-- injection
+    |       - YourUserCaseComponent
+    |       - YourUserCaseModule
+    |   +-- interactor
+    |       - YourUserCaseInteractor
+    |       - YourUserCaseInteractorImpl
+    |   +-- presenter
+    |       - YourUserCasePresenter
+    |       - YourUserCasePresenterImpl
+    |   +-- view
+    |       - YourUserCase[Activity/Fragment]
+    |       - YourUserCaseView
+    | - YourApp
+```
+
+---------------------------------------
+
+Original README:
+
+
 This is an Android Studio template for MVP. 
 
 It is inspired by [u2020-mvp-android-studio-template](https://github.com/LiveTyping/u2020-mvp-android-studio-template) and follows [Antonio Leiva's MVP implementation guide for Android](http://antonioleiva.com/mvp-android/). It also implements presenter surviving orientation changes following [Antonio Gutierrez's article](https://medium.com/@czyrux/presenter-surviving-orientation-changes-with-loaders-6da6d86ffbbf).
